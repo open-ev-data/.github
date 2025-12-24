@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/open-ev-data.svg" alt="OpenEV Data Logo" width="200" />
+  <img src="../assets/open-ev-data.svg" alt="OpenEV Data Logo" width="200" />
   <h1>OpenEV Data</h1>
   <p><strong>The Single Source of Truth for Electric Vehicle Specifications.</strong></p>
   
