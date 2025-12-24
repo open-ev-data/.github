@@ -1,6 +1,6 @@
 # OpenEV Data
 
-![OpenEV Data Logo](assets/openev-logo.svg)
+![OpenEV Data Logo](./assets/open-ev-data.svg)
 
 > **The Single Source of Truth for Electric Vehicle Specifications.**
 
