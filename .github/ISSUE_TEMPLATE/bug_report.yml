@@ -1,0 +1,124 @@
+name: Bug Report
+description: Report a bug in the API, tooling, or infrastructure
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below with as much detail as possible.
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repository
+      description: Which repository is affected?
+      options:
+        - open-ev-data-api
+        - open-ev-data-dataset (tooling/validation)
+        - open-ev-data.github.io (documentation site)
+        - .github (governance/templates)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Execute '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe expected behavior...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe actual behavior...
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: e.g. Windows 11, macOS 14, Ubuntu 22.04
+      placeholder: Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: If applicable, which browser are you using?
+      placeholder: Chrome 120
+
+  - type: input
+    id: api-version
+    attributes:
+      label: API Version
+      description: If applicable, check API response headers
+      placeholder: v1.2.3
+
+  - type: input
+    id: dataset-version
+    attributes:
+      label: Dataset Version
+      description: If applicable, check release tag
+      placeholder: v2024.12.1
+
+  - type: input
+    id: rust-version
+    attributes:
+      label: Rust Version
+      description: If API development, run `rustc --version`
+      placeholder: rustc 1.75.0
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node Version
+      description: If dataset validation, run `node --version`
+      placeholder: v20.10.0
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here (screenshots, error messages, logs, related issues)
+      placeholder: |
+        - Screenshots
+        - Error messages
+        - Logs
+        - Related issues
+
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution
+      description: If you have suggestions on how to fix the bug, please describe them here
+      placeholder: Describe potential solutions...
+

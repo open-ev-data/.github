@@ -1,0 +1,111 @@
+name: Feature Request
+description: Suggest a new feature for the API, tooling, or infrastructure
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please describe your idea in detail below.
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repository
+      description: Which repository should this feature be implemented in?
+      options:
+        - open-ev-data-api
+        - open-ev-data-dataset (schema/structure)
+        - open-ev-data.github.io (documentation)
+        - .github (governance/processes)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? Describe the use case.
+      placeholder: 'As a developer integrating OpenEV Data, I need to...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you envision this feature working
+      placeholder: Describe your proposed solution...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: Describe alternatives...
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be valuable
+      placeholder: |
+        1. Use case 1
+        2. Use case 2
+        3. Use case 3
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: benefits
+    attributes:
+      label: Who would benefit?
+      description: Select all that apply
+      options:
+        - label: API consumers
+        - label: Data contributors
+        - label: Project maintainers
+        - label: End users
+        - label: Research community
+        - label: EV manufacturers
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Implementation Complexity
+      description: How complex do you think this feature would be?
+      options:
+        - Low - Minor change to existing functionality
+        - Medium - New feature requiring moderate development
+        - High - Significant architectural change
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, diagrams, or examples about the feature request
+      placeholder: Add context, mockups, or examples...
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: List any related issues or discussions
+      placeholder: |
+        - Relates to #
+        - Depends on #
+

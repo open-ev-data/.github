@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/orgs/open-ev-data/discussions
+    about: Ask questions and discuss with the community
+  - name: Documentation
+    url: https://open-ev-data.github.io
+    about: Read the official documentation and guides
+

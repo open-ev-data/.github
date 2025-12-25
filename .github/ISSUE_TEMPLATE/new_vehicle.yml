@@ -1,0 +1,346 @@
+name: New Vehicle
+description: Propose adding a new vehicle to the dataset
+title: "[NEW VEHICLE] "
+labels: ["new-vehicle"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new vehicle! Please provide comprehensive information and reliable sources.
+
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      description: Vehicle manufacturer
+      placeholder: e.g. Tesla
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Vehicle model
+      placeholder: e.g. Model 3
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: Model year
+      placeholder: e.g. 2024
+    validations:
+      required: true
+
+  - type: input
+    id: launch-date
+    attributes:
+      label: Market Launch Date
+      description: When was or will this vehicle be launched?
+      placeholder: e.g. January 2024
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: markets
+    attributes:
+      label: Market Availability
+      description: In which markets is this vehicle available?
+      options:
+        - label: United States
+        - label: Brazil
+        - label: European Union
+        - label: Portugal
+        - label: United Kingdom
+        - label: Germany
+        - label: France
+        - label: Italy
+        - label: China
+        - label: Japan
+        - label: Other (specify in additional context)
+
+  - type: textarea
+    id: trims
+    attributes:
+      label: Trims/Variants
+      description: List all trims or variants for this vehicle
+      placeholder: |
+        1. Standard Range RWD
+        2. Long Range AWD
+        3. Performance
+    validations:
+      required: true
+
+  - type: textarea
+    id: manufacturer-source-1
+    attributes:
+      label: Manufacturer Website (Primary Market)
+      description: Official manufacturer source from primary market
+      placeholder: |
+        URL: [link]
+        Region: [e.g. USA]
+    validations:
+      required: true
+
+  - type: textarea
+    id: manufacturer-source-2
+    attributes:
+      label: Manufacturer Website (Secondary Market)
+      description: Official manufacturer source from secondary market
+      placeholder: |
+        URL: [link]
+        Region: [e.g. EU]
+    validations:
+      required: true
+
+  - type: textarea
+    id: regulatory
+    attributes:
+      label: Regulatory Certification
+      description: EPA/WLTP/CLTC certification data
+      placeholder: |
+        URL or Document Reference: [link]
+        Range values confirmed: [yes/no]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-sources
+    attributes:
+      label: Additional Sources
+      description: Professional reviews, technical documentation, etc.
+      placeholder: |
+        1. Publication: [e.g. Car and Driver]
+           URL: [link]
+        
+        2. Technical Documentation:
+           Type: [e.g. Press kit]
+           URL: [link]
+    validations:
+      required: true
+
+  - type: input
+    id: battery-chemistry
+    attributes:
+      label: Battery Chemistry
+      description: e.g. LFP, NMC, NCA
+      placeholder: NMC
+    validations:
+      required: true
+
+  - type: input
+    id: battery-total
+    attributes:
+      label: Total Battery Capacity
+      description: In kWh
+      placeholder: e.g. 75
+    validations:
+      required: true
+
+  - type: input
+    id: battery-usable
+    attributes:
+      label: Usable Battery Capacity
+      description: In kWh
+      placeholder: e.g. 72.6
+    validations:
+      required: true
+
+  - type: input
+    id: battery-voltage
+    attributes:
+      label: Battery Voltage
+      description: In volts
+      placeholder: e.g. 400
+
+  - type: input
+    id: range-wltp
+    attributes:
+      label: Range (WLTP)
+      description: In km, if available
+      placeholder: e.g. 513
+
+  - type: input
+    id: range-epa
+    attributes:
+      label: Range (EPA)
+      description: In miles, if available
+      placeholder: e.g. 272
+
+  - type: input
+    id: range-cltc
+    attributes:
+      label: Range (CLTC)
+      description: In km, if available
+      placeholder: e.g. 556
+
+  - type: input
+    id: charging-ac
+    attributes:
+      label: AC Charging Max
+      description: Maximum AC charging power in kW
+      placeholder: e.g. 11
+    validations:
+      required: true
+
+  - type: input
+    id: charging-dc
+    attributes:
+      label: DC Charging Max
+      description: Maximum DC charging power in kW
+      placeholder: e.g. 170
+    validations:
+      required: true
+
+  - type: input
+    id: connectors
+    attributes:
+      label: Connector Types
+      description: e.g. CCS2, NACS, Type 2
+      placeholder: CCS2, Type 2
+    validations:
+      required: true
+
+  - type: input
+    id: acceleration
+    attributes:
+      label: 0-100 km/h Acceleration
+      description: In seconds
+      placeholder: e.g. 6.2
+    validations:
+      required: true
+
+  - type: input
+    id: top-speed
+    attributes:
+      label: Top Speed
+      description: In km/h
+      placeholder: e.g. 180
+
+  - type: input
+    id: power
+    attributes:
+      label: Power
+      description: In kW (or kW / hp)
+      placeholder: e.g. 150 / 204
+    validations:
+      required: true
+
+  - type: input
+    id: torque
+    attributes:
+      label: Torque
+      description: In Nm
+      placeholder: e.g. 310
+
+  - type: dropdown
+    id: drivetrain
+    attributes:
+      label: Drivetrain
+      description: Drive configuration
+      options:
+        - RWD
+        - FWD
+        - AWD
+    validations:
+      required: true
+
+  - type: input
+    id: dimensions
+    attributes:
+      label: Dimensions
+      description: Length x Width x Height in mm
+      placeholder: e.g. 4720 x 1860 x 1445
+    validations:
+      required: true
+
+  - type: input
+    id: wheelbase
+    attributes:
+      label: Wheelbase
+      description: In mm
+      placeholder: e.g. 2875
+
+  - type: input
+    id: weight
+    attributes:
+      label: Weight
+      description: In kg (curb weight)
+      placeholder: e.g. 1870
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: special-features
+    attributes:
+      label: Special Considerations
+      description: Select all that apply
+      options:
+        - label: Mid-cycle refresh
+        - label: Regional specification differences
+        - label: New battery technology
+        - label: Bidirectional charging support (V2L/V2H/V2G)
+        - label: Unique charging characteristics
+
+  - type: dropdown
+    id: contribution-intent
+    attributes:
+      label: Contribution Intent
+      description: Are you planning to contribute the data yourself?
+      options:
+        - Yes, I will submit a PR with the complete data
+        - No, I'm requesting the maintainers add this vehicle
+        - I can help with data collection
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: priority
+    attributes:
+      label: Priority Rationale
+      description: Why should this vehicle be prioritized?
+      options:
+        - label: Popular/high-volume vehicle
+        - label: New technology or innovation
+        - label: Frequently requested
+        - label: Important for specific market
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Any other relevant information:
+        - Similar vehicles in dataset
+        - Platform sharing
+        - Special notes
+      placeholder: Add additional context...
+
+  - type: checkboxes
+    id: completeness
+    attributes:
+      label: Completeness Checklist
+      description: Please verify before submitting
+      options:
+        - label: I have manufacturer sources from at least 2 different regions
+          required: true
+        - label: I have regulatory certification data (EPA/WLTP/CLTC)
+          required: true
+        - label: Battery specifications are complete and verified
+          required: true
+        - label: Charging specifications include connector types and max power
+          required: true
+        - label: Range data is available for primary markets
+          required: true
+        - label: Performance specifications are complete
+          required: true
+        - label: Physical dimensions are available
+          required: true
+        - label: I have identified all trims/variants
+          required: true
+        - label: Sources are current and official
+          required: true
+

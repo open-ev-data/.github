@@ -1,0 +1,176 @@
+name: Data Correction
+description: Report incorrect vehicle specifications in the dataset
+title: "[DATA] Correction: "
+labels: ["data-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve data accuracy! Please provide detailed information and reliable sources for the correction.
+
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      description: Vehicle manufacturer
+      placeholder: e.g. BYD
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Vehicle model
+      placeholder: e.g. Seal
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: Model year
+      placeholder: e.g. 2024
+    validations:
+      required: true
+
+  - type: input
+    id: trim
+    attributes:
+      label: Trim/Variant
+      description: Specific trim or variant if applicable
+      placeholder: e.g. Performance AWD
+
+  - type: input
+    id: field-path
+    attributes:
+      label: Field Path
+      description: Which field contains incorrect information?
+      placeholder: e.g. battery.usable_capacity_kwh
+    validations:
+      required: true
+
+  - type: input
+    id: current-value
+    attributes:
+      label: Current Value
+      description: What is the current (incorrect) value?
+      placeholder: e.g. 82.5
+    validations:
+      required: true
+
+  - type: input
+    id: correct-value
+    attributes:
+      label: Correct Value
+      description: What should the correct value be?
+      placeholder: e.g. 82.56
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-1
+    attributes:
+      label: Source 1
+      description: First reliable source confirming the correct value
+      placeholder: |
+        Type: [Official/Regulatory/Publication]
+        URL: [link]
+        Region: [e.g. USA, EU, China]
+        Relevant excerpt or page number:
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-2
+    attributes:
+      label: Source 2
+      description: Second reliable source confirming the correct value
+      placeholder: |
+        Type: [Official/Regulatory/Publication]
+        URL: [link]
+        Region: [e.g. USA, EU, China]
+        Relevant excerpt or page number:
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-3
+    attributes:
+      label: Source 3 (Optional)
+      description: Third reliable source if available
+      placeholder: |
+        Type: [Official/Regulatory/Publication]
+        URL: [link]
+        Region: [e.g. USA, EU, China]
+        Relevant excerpt or page number:
+
+  - type: checkboxes
+    id: source-type
+    attributes:
+      label: Source Quality
+      description: What type of sources are you providing?
+      options:
+        - label: Official manufacturer specification sheet
+        - label: Regulatory certification (EPA, WLTP, CLTC)
+        - label: Professional automotive publication
+        - label: Technical service manual
+        - label: Verified testing data
+        - label: Other (specify in additional context)
+
+  - type: dropdown
+    id: regional-variation
+    attributes:
+      label: Regional Variation
+      description: Does this correction apply to specific regions only?
+      options:
+        - Global specification
+        - USA
+        - Brazil
+        - European Union
+        - China
+        - Japan
+        - Other (specify in additional context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact Level
+      description: How critical is this correction?
+      options:
+        - Critical - Safety or charging specification
+        - High - Major specification (range, battery, performance)
+        - Medium - Important but not critical
+        - Low - Minor detail or cosmetic
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Any other context about the data correction:
+        - Is this a recent update?
+        - Does it affect multiple trims or years?
+        - Are there conflicting sources?
+      placeholder: Add additional context...
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification Checklist
+      description: Please verify before submitting
+      options:
+        - label: I have checked at least two reliable sources
+          required: true
+        - label: The sources are current and applicable to the specified year/trim
+          required: true
+        - label: I have specified the exact field path that needs correction
+          required: true
+        - label: I have indicated if this is region-specific
+          required: true
+
