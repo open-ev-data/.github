@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "API",
+			"path": "../open-ev-data-api"
+		},
+		{
+			"name": "Dataset",
+			"path": "../open-ev-data-dataset"
+		},
+		{
+			"name": "Website",
+			"path": "../open-ev-data.github.io"
+		},
+        {
+            "name": "Governance",
+            "path": "../.github"
+        }
+	],
+	"settings": {
+		"files.exclude": {
+			"**/node_modules": true,
+			"**/.git": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/package-lock.json": true
+		}
+	}
+}
+
