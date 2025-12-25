@@ -17,6 +17,15 @@
   - [x] Testing API server with generated data
   - [x] Common development workflows
   - [x] Troubleshooting guide
+- [x] Create RUST_GUIDELINES.md with best practices
+  - [x] SOLID principles in Rust
+  - [x] Hexagonal architecture enforcement
+  - [x] Type design patterns
+  - [x] Error handling standards
+  - [x] Testing strategies
+  - [x] Performance guidelines
+  - [x] Security practices
+  - [x] Documentation standards
 
 ### Phase 1.2: Core Domain Implementation 🔄
 
