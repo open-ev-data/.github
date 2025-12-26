@@ -30,5 +30,5 @@ OpenEV Data is structured into modular repositories to separate data curation fr
 | **⚖️ Governance** | Full project details, roadmap, and organization policies. | - | [**View Details**](../README.md) |
 
 <div align="center">
-  <sub>Powered by <strong>Rust</strong>, <strong>Cloudflare Workers</strong>, and <strong>Community Intelligence</strong>.</sub>
+  <sub>Powered by <strong>Rust</strong> and <strong>Community Intelligence</strong>.</sub>
 </div>
