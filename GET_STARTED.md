@@ -5,7 +5,7 @@ This guide will walk you through setting up the complete OpenEV Data development
 ## Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Visual Studio Code](https://code.visualstudio.com/) or [Cursor](https://cursor.sh/)
+- [Visual Studio Code](https://code.visualstudio.com/), [Cursor](https://cursor.sh/), or [Antigravity](https://antigravity.dev/)
 - [Node.js](https://nodejs.org/) (for dataset validation)
 - [Rust](https://www.rust-lang.org/) (for API development)
 
@@ -13,12 +13,12 @@ This guide will walk you through setting up the complete OpenEV Data development
 
 OpenEV Data consists of four interconnected repositories:
 
-| Repository | Purpose |
-|:-----------|:--------|
-| `open-ev-data-dataset` | Core vehicle database with JSON files and schemas |
-| `open-ev-data-api` | Rust-based API and ETL pipeline |
-| `open-ev-data.github.io` | Documentation website |
-| `.github` | Governance, policies, and organization-wide templates |
+| Repository               | Purpose                                               |
+| :----------------------- | :---------------------------------------------------- |
+| `open-ev-data-dataset`   | Core vehicle database with JSON files and schemas     |
+| `open-ev-data-api`       | Rust-based API and ETL pipeline                       |
+| `open-ev-data.github.io` | Documentation website                                 |
+| `.github`                | Governance, policies, and organization-wide templates |
 
 ## Installation
 
@@ -56,7 +56,7 @@ open-ev-data/
 
 The `.github` repository contains a pre-configured workspace file that allows you to work with all repositories simultaneously.
 
-#### Using Visual Studio Code or Cursor:
+#### Using Visual Studio Code, Cursor, or Antigravity:
 
 **Option A: Command Line**
 ```bash
@@ -68,8 +68,13 @@ Or if using Cursor:
 cursor .github/open-ev-data.code-workspace
 ```
 
+Or if using Antigravity:
+```bash
+antigravity .github/open-ev-data.code-workspace
+```
+
 **Option B: GUI**
-1. Open VS Code or Cursor
+1. Open VS Code, Cursor, or Antigravity
 2. Go to `File` > `Open Workspace from File...`
 3. Navigate to `open-ev-data/.github/open-ev-data.code-workspace`
 4. Click `Open`
