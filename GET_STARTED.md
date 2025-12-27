@@ -114,6 +114,29 @@ cargo test
 
 Read the [API Architecture](https://github.com/open-ev-data/open-ev-data-api/blob/main/ARCHITECTURE.md).
 
+### Quick Start with Docker
+
+To quickly test the latest release without building locally:
+
+```bash
+cd open-ev-data-dataset
+docker-compose up -d
+```
+
+This will:
+- Download the latest dataset SQLite database
+- Start the API server on http://localhost:8080
+
+Access the API:
+```bash
+curl http://localhost:8080/api/v1/vehicles
+```
+
+Stop the stack:
+```bash
+docker-compose down
+```
+
 ### For Documentation Writers
 
 Navigate to the `Website` folder in your workspace:
