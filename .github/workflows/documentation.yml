@@ -1,0 +1,50 @@
+name: Documentation
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - "README.md"
+            - "GET_STARTED.md"
+            - "CONTRIBUTING.md"
+            - "CODE_OF_CONDUCT.md"
+
+permissions:
+    contents: read
+
+jobs:
+    sync-documentation:
+        name: Sync Documentation to Website
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Get latest commit SHA
+              id: commit
+              run: |
+                  echo "sha=${{ github.sha }}" >> $GITHUB_OUTPUT
+
+            - name: Generate GitHub App token
+              id: generate_token
+              uses: tibdex/github-app-token@v2
+              with:
+                  app_id: ${{ secrets.APP_ID }}
+                  private_key: ${{ secrets.PRIVATE_KEY }}
+
+            - name: Trigger Website Documentation Sync
+              uses: peter-evans/repository-dispatch@v3
+              with:
+                  token: ${{ steps.generate_token.outputs.token }}
+                  repository: open-ev-data/open-ev-data.github.io
+                  event-type: sync-governance-docs
+                  client-payload: |
+                      {
+                        "source": "governance",
+                        "sha": "${{ github.sha }}",
+                        "ref": "${{ github.ref }}"
+                      }
+
