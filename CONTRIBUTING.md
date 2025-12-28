@@ -58,12 +58,12 @@ To add a new vehicle to the dataset:
 
 OpenEV Data consists of four repositories:
 
-| Repository | Purpose | Primary Language |
-|:-----------|:--------|:-----------------|
-| [open-ev-data-dataset](https://github.com/open-ev-data/open-ev-data-dataset) | Vehicle data and JSON schemas | JSON |
-| [open-ev-data-api](https://github.com/open-ev-data/open-ev-data-api) | API engine and ETL pipeline | Rust |
-| [open-ev-data.github.io](https://github.com/open-ev-data/open-ev-data.github.io) | Documentation website | MkDocs |
-| [.github](https://github.com/open-ev-data/.github) | Governance and policies | Markdown |
+| Repository                                                                       | Purpose                       | Primary Language |
+| :------------------------------------------------------------------------------- | :---------------------------- | :--------------- |
+| [open-ev-data-dataset](https://github.com/open-ev-data/open-ev-data-dataset)     | Vehicle data and JSON schemas | JSON             |
+| [open-ev-data-api](https://github.com/open-ev-data/open-ev-data-api)             | API engine and ETL pipeline   | Rust             |
+| [open-ev-data.github.io](https://github.com/open-ev-data/open-ev-data.github.io) | Documentation website         | MkDocs           |
+| [.github](https://github.com/open-ev-data/.github)                               | Governance and policies       | Markdown         |
 
 ## Contributing to the Dataset
 
@@ -138,7 +138,6 @@ Avoid:
 
 - Rust 1.75+ installed via rustup
 - Understanding of REST APIs
-- Familiarity with WebAssembly (for edge deployments)
 
 ### Setup
 
@@ -161,9 +160,8 @@ cargo test
 ### Performance Considerations
 
 - API targets <50ms response times globally
-- Optimize for edge runtime constraints
+- Optimize for production runtime constraints
 - Consider SQLite query performance
-- Minimize WASM binary size
 
 ## Contributing to Documentation
 

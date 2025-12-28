@@ -6,7 +6,7 @@
 
 The primary goal of **OpenEV Data** is to develop and maintain the world's most accurate, scientifically validated, and accessible open database of Electric Vehicle (EV) specifications. Unlike fragmented proprietary lists, OpenEV is built on **Data-as-Code** principles, ensuring version control, strict schema validation, and community review for every data point—from battery chemistry to charging curves.
 
-Our infrastructure is powered by a high-performance **Rust** ecosystem. The API runs on the Edge (WebAssembly), providing global low-latency access to data, while the dataset itself is agnostic and available for direct download in JSON or SQL formats.
+Our infrastructure is powered by a high-performance **Rust** ecosystem. The API provides global low-latency access to data, while the dataset itself is agnostic and available for direct download in JSON or SQL formats.
 
 We aim to speed up eMobility adoption by providing developers, researchers, and charging network operators with a reliable standard (The "OpenEV Spec") to build better routing algorithms, chargers, and apps.
 
@@ -14,12 +14,12 @@ We aim to speed up eMobility adoption by providing developers, researchers, and 
 
 OpenEV Data is modular by design to separate concerns between data curation and software engineering.
 
-| Repository                                                                           | Description                                                                 | Tech Stack                         |
-| :----------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :--------------------------------- |
-| [**open-ev-data-dataset**](https://github.com/open-ev-data/open-ev-data-dataset)     | The core database. Contains all vehicle JSONs and validation schemas.       | JSON, JSON Schema                  |
-| [**open-ev-data-api**](https://github.com/open-ev-data/open-ev-data-api)             | The high-performance engine. Handles ETL, SQL generation, and the Edge API. | **Rust**, Wasm, Cloudflare Workers |
-| [**open-ev-data.github.io**](https://github.com/open-ev-data/open-ev-data.github.io) | Official documentation, guides, and API reference.                          | MkDocs, Material                   |
-| [**.github**](https://github.com/open-ev-data/.github)                               | Governance, organization-wide policies, and issue templates.                | Markdown                           |
+| Repository                                                                           | Description                                                            | Tech Stack        |
+| :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :---------------- |
+| [**open-ev-data-dataset**](https://github.com/open-ev-data/open-ev-data-dataset)     | The core database. Contains all vehicle JSONs and validation schemas.  | JSON, JSON Schema |
+| [**open-ev-data-api**](https://github.com/open-ev-data/open-ev-data-api)             | The high-performance engine. Handles ETL, SQL generation, and the API. | **Rust**          |
+| [**open-ev-data.github.io**](https://github.com/open-ev-data/open-ev-data.github.io) | Official documentation, guides, and API reference.                     | MkDocs, Material  |
+| [**.github**](https://github.com/open-ev-data/.github)                               | Governance, organization-wide policies, and issue templates.           | Markdown          |
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ To start consuming the data or contributing to the project, please read our [**D
 
 - **Strict Typing:** All data is validated against rigorous JSON Schemas (`vehicle.schema.json`) before merging.
 - **Deep Merge Architecture:** Uses a hierarchical inheritance model (Base -> Year -> Trim) to ensure DRY (Don't Repeat Yourself) data entry.
-- **Edge Computing:** The API is deployed globally using Cloudflare Workers and D1 (SQLite), ensuring <50ms latency.
+- **High Performance:** The API is optimized for low-latency global access using efficient Rust infrastructure.
 - **Rust Core:** All tooling (ETL, Validation, Server) is written in Rust for safety and performance.
 
 ### Roadmap
