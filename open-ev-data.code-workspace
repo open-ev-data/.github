@@ -12,10 +12,10 @@
 			"name": "Website",
 			"path": "../open-ev-data.github.io"
 		},
-        {
-            "name": "Governance",
-            "path": "../.github"
-        }
+		{
+			"name": "Governance",
+			"path": "."
+		}
 	],
 	"settings": {
 		"files.exclude": {
@@ -28,4 +28,3 @@
 		}
 	}
 }
-
