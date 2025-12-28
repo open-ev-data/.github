@@ -14,12 +14,12 @@ We aim to speed up eMobility adoption by providing developers, researchers, and 
 
 OpenEV Data is modular by design to separate concerns between data curation and software engineering.
 
-| Repository | Description | Tech Stack |
-| :--- | :--- | :--- |
-| [**open-ev-data-dataset**](https://github.com/open-ev-data/open-ev-data-dataset) | The core database. Contains all vehicle JSONs and validation schemas. | JSON, JSON Schema |
-| [**open-ev-data-api**](https://github.com/open-ev-data/open-ev-data-api) | The high-performance engine. Handles ETL, SQL generation, and the Edge API. | **Rust**, Wasm, Cloudflare Workers |
-| [**open-ev-data.github.io**](https://github.com/open-ev-data/open-ev-data.github.io) | Official documentation, guides, and API reference. | MkDocs, Material |
-| [**.github**](https://github.com/open-ev-data/.github) | Governance, organization-wide policies, and issue templates. | Markdown |
+| Repository                                                                           | Description                                                                 | Tech Stack                         |
+| :----------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :--------------------------------- |
+| [**open-ev-data-dataset**](https://github.com/open-ev-data/open-ev-data-dataset)     | The core database. Contains all vehicle JSONs and validation schemas.       | JSON, JSON Schema                  |
+| [**open-ev-data-api**](https://github.com/open-ev-data/open-ev-data-api)             | The high-performance engine. Handles ETL, SQL generation, and the Edge API. | **Rust**, Wasm, Cloudflare Workers |
+| [**open-ev-data.github.io**](https://github.com/open-ev-data/open-ev-data.github.io) | Official documentation, guides, and API reference.                          | MkDocs, Material                   |
+| [**.github**](https://github.com/open-ev-data/.github)                               | Governance, organization-wide policies, and issue templates.                | Markdown                           |
 
 ## Getting Started
 
@@ -77,6 +77,12 @@ See [LICENSE](LICENSE) in each repository for specific details.
 ## Support
 
 If you identify a data error or a bug in the API, please [open an issue](https://github.com/open-ev-data/.github/issues) using the appropriate template.
+
+## Contributors
+
+|                                     Avatar                                      |              Contributor               | Contributions                               |
+| :-----------------------------------------------------------------------------: | :------------------------------------: | :------------------------------------------ |
+| <img src="https://github.com/jsrwell.png" width="50" style="border-radius:50%"> | [@jsrwell](https://github.com/jsrwell) | Project creator, architecture, API, dataset |
 
 ---
 
