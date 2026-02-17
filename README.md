@@ -18,6 +18,7 @@ OpenEV Data is modular by design to separate concerns between data curation and 
 | :----------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | :---------------- |
 | [**open-ev-data-dataset**](https://github.com/open-ev-data/open-ev-data-dataset)     | The core database. Contains all vehicle JSONs and validation schemas.  | JSON, JSON Schema |
 | [**open-ev-data-api**](https://github.com/open-ev-data/open-ev-data-api)             | The high-performance engine. Handles ETL, SQL generation, and the API. | **Rust**          |
+| [**open-ev-data-ui**](https://github.com/open-ev-data/open-ev-data-ui)               | The official web interface. Explore and compare vehicle data.          | React, Vite       |
 | [**open-ev-data.github.io**](https://github.com/open-ev-data/open-ev-data.github.io) | Official documentation, guides, and API reference.                     | MkDocs, Material  |
 | [**.github**](https://github.com/open-ev-data/.github)                               | Governance, organization-wide policies, and issue templates.           | Markdown          |
 
@@ -31,6 +32,7 @@ To start consuming the data or contributing to the project, please read our [**D
 ## Project Status
 
 - **Website:** [open-ev-data.github.io](https://open-ev-data.github.io)
+- **UI Version:** [![Latest Release](https://img.shields.io/github/v/release/open-ev-data/open-ev-data-ui)](https://github.com/open-ev-data/open-ev-data-ui/releases)
 - **API Status:** [![Status](https://img.shields.io/website?url=https%3A%2F%2Fapi.open-ev-data.org%2Fhealth)](https://github.com/open-ev-data/open-ev-data-api)
 - **Data Version:** [![Latest Release](https://img.shields.io/github/v/release/open-ev-data/open-ev-data-dataset)](https://github.com/open-ev-data/open-ev-data-dataset/releases)
 
