@@ -1,34 +1,38 @@
 {
-	"folders": [
-		{
-			"name": "API",
-			"path": "../open-ev-data-api"
-		},
-		{
-			"name": "Dataset",
-			"path": "../open-ev-data-dataset"
-		},
-		{
-			"name": "Website",
-			"path": "../open-ev-data.github.io"
-		},
-		{
-			"name": "UI",
-			"path": "../open-ev-data-ui"
-		},
-		{
-			"name": "Governance",
-			"path": "."
-		}
-	],
-	"settings": {
-		"files.exclude": {
-			"**/node_modules": true,
-			"**/.git": true
-		},
-		"search.exclude": {
-			"**/node_modules": true,
-			"**/package-lock.json": true
-		}
-	}
+  "folders": [
+    {
+      "name": "API",
+      "path": "../open-ev-data-api",
+    },
+    {
+      "name": "Dataset",
+      "path": "../open-ev-data-dataset",
+    },
+    {
+      "name": "Website",
+      "path": "../open-ev-data.github.io",
+    },
+    {
+      "name": "VehiclesExplorer",
+      "path": "../open-ev-data-ui",
+    },
+    {
+      "name": "SustainabilityExplorer",
+      "path": "../open-ev-data-sustainability",
+    },
+    {
+      "name": "Governance",
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true,
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/package-lock.json": true,
+    },
+  },
 }
